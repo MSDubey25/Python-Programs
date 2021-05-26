@@ -1,0 +1,12 @@
+print("file management is done using os module")
+import os
+print("current working directory : ",os.getcwd())
+print("cwd as a byte object : ",os.getcwdb())
+print("listing content of Directory \n",os.listdir())
+print("mkdir() for creating a directory")
+os.mkdir("Test")
+print(os.listdir())
+os.rename("Test","NewOne")
+os.rmdir("NewOne")
+os.chdir("..")
+print(os.getcwd())
